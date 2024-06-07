@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+ 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    margin: 0 20px;
+    padding: 0;
+  }
+
+  .container_Favorite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .team-item {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    transition: all .4s;
+    position:relative;
+    overflow: hidden;
+    margin: 0 10px;
+  }
+
+  .team-item:hover{
+    flex-basis: 400px;
+  
+  }
+
+.Favorite_picture img{
+    width: 100%;
+   
+}
+
+
+
+  .Favorite_content {
+    position: absolute;
+    left: 0px;
+    bottom: 7px;
+    margin-left: 0px;
+    padding: 5px;
+    color: #f9f9f9;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+
+  }
+
+  .Favorite_content h3{
+    font-size:  25px;
+  }
+
+  .Favorite_content span{
+    display:block;
+    font-size: 15px;
+  }
+
+  .Favorite_content p{
+    color: #fff;
+    font-size: 12px;
+   min-width: 390px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.4s, opacity 0.4s;
+    opacity: 0;
+    transition-delay: .4s
+  }
+
+  .team-item:hover .Favorite_content p{
+    opacity: 1;
+    max-height: 100px;
+  }
+  
+
+  
+  .frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  button {
+    margin: 20px;
+    outline: none;
+  }
+  .custom-btn {
+    width: 100px; /* 버튼 너비를 줄임 */
+    height: 30px; /* 버튼 높이를 줄임 */
+    padding: 3px 9px; /* 패딩을 줄여 버튼 크기를 줄임 */
+    border: 1px solid #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn-1 {
+    transition: all 0.3s ease;
+  }
+  .btn-1:hover {
+     box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+  }
+
+  .btn-1-text {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  header img {
+    margin-top: 15px;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  section {
+    padding: 40px 20px;
+    border-top: 2px solid black;
+    margin-top: 100px;
+    background-color: #f9f9f9;
+  }
+
+  section h2 {
+    text-align: center;
+    margin-top: 0;  /* 필요한 경우 조정 */
+    padding-top: 20px;  /* 필요한 경우 조정 */
+  }
+
+  
+  .profile-section {
+    background-color: #f9f9f9;
+    border-top: 2px solid black;
+    margin-top: 100px;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 150px;
+  }
+  
+  .profile-section h2 {
+    position: absolute;
+    top: 40px; /* 섹션 중앙 상단에 위치시키기 위해 위로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    margin: 0.3125em 0;
+    display: inline-block;
+  }
+  
+  .style-3:before {
+    content: "";
+    border-top: 1px solid white;
+    position: absolute;
+    width: 300%;
+    top: 35%;
+    left: -100%;
+    z-index: -999;
+  }
+  
+  .style-3:after {
+    content: "";
+    border-bottom: 1px solid white;
+    position: absolute;
+    width: 300%;
+    bottom: 35%;
+    left: -100%;
+    z-index: -999;
+  }
+  
+  .profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px; /* 두 배 넓히기 */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-image img {
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-left: 300px;
+  }
+  
+  .profile-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* 왼쪽 정렬 */
+    margin-left: 80px;
+  }
+  
+  .profile-text h5,
+  .profile-text p {
+    margin: 5px 0;
+  }
+  
+  
+  .style-3 {
+    font-family: "Oswald", sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header > img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  header > nav {
+    width: 600px;
+    height: 100%;
+  }
+  
+  header ul {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header ul > li {
+    font-size: 17px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+/* 사진 슬라이더 */
+*html, body {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .kind_wrap {
+    border: 2px solid black; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    position: relative;
+    height: 200px; /* 높이를 2배로 조정 */
+  }
+  
+  .kind_wrap > .kind_slider {
+    overflow: hidden;
+    height: 100%; /* 슬라이더 높이 설정 */
+  }
+  
+  .kind_wrap > .kind_slider .slider { 
+    position: relative; 
+    transition: 0.5s;
+    height: 100%; /* 슬라이더 높이 설정 */
+  }
+  
+  .kind_wrap > .kind_slider .slider li {
+    float: left;
+    height: 100%; /* 슬라이더 아이템 높이 설정 */
+  }
+  
+  .kind_wrap > .kind_slider img {
+    vertical-align: top;
+    height: 100%; /* 이미지 높이 설정 */
+  }
+  
+  .kind_wrap .arrow > .prev, .kind_wrap .arrow > .next {
+    position: absolute; 
+    top: 50%; /* 화살표 버튼 상단 위치 조정 */
+    transform: translateY(-50%); /* 수직 가운데 정렬 */
+    font-size: 2rem; /* 화살표 버튼 크기 2배로 조정 */
+    width: 50px; /* 화살표 버튼 폭 조정 */
+    height: 50px; /* 화살표 버튼 높이 조정 */
+    display: flex; /* 중앙 정렬을 위한 flexbox 사용 */
+    align-items: center; /* 수직 중앙 정렬 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    background-color: rgba(0, 0, 0, 0.5); /* 배경 색상 추가 (필요한 경우) */
+    color: white; /* 화살표 색상 변경 */
+    border-radius: 50%; /* 둥근 모서리 */
+  }
+  
+  .kind_wrap .arrow > .prev {
+    left: -25px; /* 왼쪽 화살표 버튼 위치 조정 */
+  }
+  
+  .kind_wrap .arrow > .next {
+    right: -25px; /* 오른쪽 화살표 버튼 위치 조정 */
+  }
+
+  
+#idx_top { width: 100%; height: 400px; background: url(banner.jpg) no-repeat 50% 50% /cover; 
+}
+
+
+
+.slideshow-image {
+  borde.Slidesbackground {
+    display: flex;
+    justify-content: center;
+    /* 섹션 중앙에 배치 */
+  }
+  
+  .mySlides {
+    border-radius: 3%;
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* 슬라이드 이미지 중앙 정렬 */
+    overflow: visible;
+  }
+}
+
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  margin-top: 0px; /* 슬라이드 이미지와 간격 조정 */
+  /* .slideshow-container 클래스에 대한 스타일을 정의합니다. 플렉스 박스 설정과 위치, 여백을 조정합니다. */
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  /* .fade 클래스에 대한 스타일을 정의합니다. 이름이 'fade'인 애니메이션과 그 지속 시간을 설정합니다. */
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+  /*'fade' 애니메이션에 대한 키 프레임을 정의합니다. 투명도(opacity)가 0.4에서 1로 변화합니다. */
+}
